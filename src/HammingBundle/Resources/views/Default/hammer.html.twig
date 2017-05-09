@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	{{ dump(data) }}
+	{% if data.string1|length != data.string2|length %}
+		Les 2 chaines n'ot pas la meme longueur
+	{% else %}
+		{% set cpt = 0 %}
+		{% for letter in data.string1|split('')%}			
+			{% if letter != data.string2[loop.index0:1] %}
+				{% set cpt = cpt + 1 %}
+			{% endif %}
+		{% endfor %}
+		Il y a {{ cpt }} differences.
+	{% endif %}
+{% endblock %}

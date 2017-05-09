@@ -1,3 +1,4 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+hamming:
+    resource: "@HammingBundle/Controller/"
+    type:     annotation
+    prefix:   /

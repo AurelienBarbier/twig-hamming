@@ -1,9 +1,9 @@
 <?php
 
-namespace AppBundle;
+namespace HammingBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AppBundle extends Bundle
+class HammingBundle extends Bundle
 {
 }
